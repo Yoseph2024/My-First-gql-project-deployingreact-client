@@ -1,0 +1,42 @@
+/* Basic styling for cards */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to top right, #f9f9f9, #ffffff);
+  }
+  
+  /* Hover effects */
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Styling for button */
+  .btn-gradient {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .btn-gradient:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    color: #fff;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .product-card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .product-card img {
+      height: 12rem;
+    }
+  }
+  
